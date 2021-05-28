@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}
+    login page
+{% endblock %}
+
+{% block content %}
+
+<form action="action_page.php" method="post">
+
+    <br>
+  <div class="container">
+      <h1>Login</h1>
+    <p>Please fill to login.</p>
+    <hr>
+    <label ><b>Username:</b></label>
+<br>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+
+    <label ><b>Password:</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <br>
+      <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+      <br>
+      <br>
+    <button class="btn btn-primary" type="submit">Login</button>
+    <br>
+  </div>
+
+  <div class="container" >
+      <br>
+    <button type="button" class="btn btn-danger">Cancel</button>
+    <span class="psw"> <a href="{{ url_for('forgot_page') }}"> forgot password?</a></span>
+  </div>
+</form>
+
+
+
+{% endblock %}

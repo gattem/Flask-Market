@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+    forgot Page
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1>forgot page</h1>
+<hr>
+</div>
+<form method="post" action="">
+<div class="container">
+<label for="newPassword"><b>New Password:</b></label>
+    <br>
+<input type="password" placeholder="Enter password" id="newPassword" name="newPassword" title="New password" />
+<br>
+<label for="confirmPassword"><b>Confirm Password:</b></label>
+    <br>
+<input type="password" placeholder="Enter Confirm Password" id="confirmPassword" name="confirmPassword" title="Confirm new password" />
+<br>
+<label for="token"><b>Pasword Token:</b></label>
+    <br>
+<input type="text" placeholder="Enter tocken" id="token" name="token" title="Password Token" />
+<br>
+<p class="form-actions">
+    <br>
+<input class="btn btn-primary" type="submit" value="Change Password" title="Change password" />
+</p>
+</div>
+</form>
+
+
+{% endblock %}
